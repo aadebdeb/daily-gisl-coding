@@ -1,4 +1,4 @@
-float diffuseLambert(float dotNL) {
+float diffuseLambertNormalized(float dotNL) {
     return max(0.0, dotNL) * INV_PI;
 }
 

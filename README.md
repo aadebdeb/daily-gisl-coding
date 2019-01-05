@@ -1,5 +1,6 @@
 # Daily GLSL Coding
 
+* [2019/01/01 raymarching multiple materials](http://glslsandbox.com/e#51642.0)
 * [2018/12/27 raymarching foldRotate](http://glslsandbox.com/e#51393.0)
 * [2018/12/26 ufo posteffect](http://glslsandbox.com/e#51256.0)
 * [2018/12/25 ufo](http://glslsandbox.com/e#51238.0)
