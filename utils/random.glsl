@@ -18,6 +18,15 @@ vec4 random4(float x) {
     return fract(sin(x * vec4(12.9898, 51.431, 29.964, 86.432)) * vec4(43758.5453, 71932.1354, 39215.4221, 67915.8743));
 }
 
+float valuenoise(float x) {
+    float i = floor(x);
+    float f = fract(x);
+
+    float u = f * f * (3.0 - 2.0 * f);
+
+    return mix(random(i), random(i + 1.0), u);
+}
+
 float valuenoise(vec2 x) {
     vec2 i = foor(x);
     vec2 f = fract(x);
