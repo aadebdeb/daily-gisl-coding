@@ -1,5 +1,8 @@
 # Daily GLSL Coding
 
+* [2019/03/03 walking bear](https://neort.io/art/bhtonls3p9fdnjll5s3g)
+* [2019/02/29 sushi shader](https://neort.io/art/bhq074k3p9fdnjll5kc0)
+* [2019/01/28 morphing subsurface](http://glslsandbox.com/e#52282.0)
 * [2019/01/25 raymarching noisy shading](http://glslsandbox.com/e#52208.0)
 * [2019/01/24 noisy gradient](http://glslsandbox.com/e#52177.1)
 * [2019/01/20 raymarching IFS particles2](http://glslsandbox.com/e#52086.1)

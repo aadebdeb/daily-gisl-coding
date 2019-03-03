@@ -43,3 +43,23 @@ float valuenoise(vec2 x) {
         u.y
     );
 }
+
+float valuenoise(vec3 x) {
+    vec3 i = floor(x);
+    vec3 f = fract(x);
+
+    vec3 u = f * f * (3.0 - 2.0 * f);
+
+    return mix(
+        mix(
+            mix(random(i + vec3(0.0, 0.0, 0.0)), random(i + vec3(1.0, 0.0, 0.0)), u.x),
+            mix(random(i + vec3(0.0, 1.0, 0.0)), random(i + vec3(1.0, 1.0, 0.0)), u.x),
+            u.y
+        ),
+        mix(
+            mix(random(i + vec3(0.0, 0.0, 1.0)), random(i + vec3(1.0, 0.0, 1.0)), u.x),
+            mix(random(i + vec3(0.0, 1.0, 1.0)), random(i + vec3(1.0, 1.0, 1.0)), u.x),
+            u.y
+        ),
+        u.z);
+}
