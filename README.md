@@ -1,5 +1,7 @@
 # Daily GLSL Coding
 
+* [2019/03/09 in the flow of triangles](https://neort.io/art/bi2e3pk3p9f8qviu3c10)
+* [2019/03/04 flying human](https://neort.io/art/bhuilrc3p9f8qviu364g)
 * [2019/03/03 walking bear](https://neort.io/art/bhtonls3p9fdnjll5s3g)
 * [2019/02/29 sushi shader](https://neort.io/art/bhq074k3p9fdnjll5kc0)
 * [2019/01/28 morphing subsurface](http://glslsandbox.com/e#52282.0)
