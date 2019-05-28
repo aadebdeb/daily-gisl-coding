@@ -10,6 +10,10 @@ float random(vec3 x){
     return fract(sin(dot(x,vec3(12.9898, 78.233, 39.425))) * 43758.5453);
 }
 
+float random(vec4 x){
+    return fract(sin(dot(x,vec4(12.9898, 78.233, 39.425, 27.196))) * 43758.5453);
+}
+
 vec2 random2(float x) {
     return fract(sin(x * vec2(12.9898, 51.431)) * vec2(43758.5453, 71932.1354));
 }
@@ -32,14 +36,14 @@ float valuenoise(float x) {
 }
 
 float valuenoise(vec2 x) {
-    vec2 i = foor(x);
+    vec2 i = floor(x);
     vec2 f = fract(x);
 
-    float u = f * f * (3.0 - 2.0 * f);
+    vec2 u = f * f * (3.0 - 2.0 * f);
 
     return mix(
         mix(random(i), random(i + vec2(1.0, 0.0)), u.x),
-        mix(random(i + vec2(0.0, 1.0)), vec2(i + vec2(1.0, 1.0)), u.x),
+        mix(random(i + vec2(0.0, 1.0)), random(vec2(i + vec2(1.0, 1.0))), u.x),
         u.y
     );
 }
@@ -63,3 +67,41 @@ float valuenoise(vec3 x) {
         ),
         u.z);
 }
+
+float valuenoise(vec4 x) {
+  vec4 i = floor(x);
+  vec4 f = fract(x);
+
+  vec4 u = f * f * (3.0 - 2.0 * f);
+
+  return mix(
+    mix(
+      mix(
+          mix(random(i + vec4(0.0, 0.0, 0.0, 0.0)), random(i + vec4(1.0, 0.0, 0.0, 0.0)), u.x),
+          mix(random(i + vec4(0.0, 1.0, 0.0, 0.0)), random(i + vec4(1.0, 1.0, 0.0, 0.0)), u.x),
+          u.y
+      ),
+      mix(
+          mix(random(i + vec4(0.0, 0.0, 1.0, 0.0)), random(i + vec4(1.0, 0.0, 1.0, 0.0)), u.x),
+          mix(random(i + vec4(0.0, 1.0, 1.0, 0.0)), random(i + vec4(1.0, 1.0, 1.0, 0.0)), u.x),
+          u.y
+      ),
+      u.z
+    ),
+    mix(
+      mix(
+          mix(random(i + vec4(0.0, 0.0, 0.0, 1.0)), random(i + vec4(1.0, 0.0, 0.0, 1.0)), u.x),
+          mix(random(i + vec4(0.0, 1.0, 0.0, 1.0)), random(i + vec4(1.0, 1.0, 0.0, 1.0)), u.x),
+          u.y
+      ),
+      mix(
+          mix(random(i + vec4(0.0, 0.0, 1.0, 1.0)), random(i + vec4(1.0, 0.0, 1.0, 1.0)), u.x),
+          mix(random(i + vec4(0.0, 1.0, 1.0, 1.0)), random(i + vec4(1.0, 1.0, 1.0, 1.0)), u.x),
+          u.y
+      ),
+      u.z
+    ),
+    u.w
+  );
+}
+
