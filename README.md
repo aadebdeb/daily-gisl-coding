@@ -1,5 +1,6 @@
 # Daily GLSL Coding
 
+* [2019/06/03 bump mapping reflection](http://glslsandbox.com/e#55055.0)
 * [2019/05/29 bump mapping](http://glslsandbox.com/e#54937.0)
 * [2019/05/25 metaball in room](https://neort.io/art/bjl6pok3p9f9psc9pdjg)
 * [2019/05/21 360-degree camera](https://neort.io/art/bjhuqrk3p9f9psc9pbl0)
