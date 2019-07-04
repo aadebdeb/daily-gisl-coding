@@ -1,5 +1,14 @@
 # Daily GLSL Coding
 
+* [2019/07/01 recursive tetrahedron](http://glslsandbox.com/e#55834.0)
+* [2019/07/01 menger sponge2](http://glslsandbox.com/e#55835.0)
+* [2019/07/01 menger sponge](http://glslsandbox.com/e#55836.0)
+* [2019/07/01 hexiagonal tiling](http://glslsandbox.com/e#55837.0)
+* [2019/06/30 quaternion mandelbrot set](http://glslsandbox.com/e#55838.0)
+* [2019/06/30 quaternion julia set](http://glslsandbox.com/e#55839.0)
+* [2019/06/30 pseudo kleinian](http://glslsandbox.com/e#55842.0)
+* [2019/06/30 mandelbulb](http://glslsandbox.com/e#55840.0)
+* [2019/06/30 mandelbox](http://glslsandbox.com/e#55841.0)
 * [2019/06/03 bump mapping reflection](http://glslsandbox.com/e#55055.0)
 * [2019/05/29 bump mapping](http://glslsandbox.com/e#54937.0)
 * [2019/05/25 metaball in room](https://neort.io/art/bjl6pok3p9f9psc9pdjg)
