@@ -1,5 +1,7 @@
 # Daily GLSL Coding
 
+* [2019/07/09 pesudo global illumination](https://neort.io/art/bkiug3c3p9f188g4t5kg)
+* [2019/07/07 physics #1](https://neort.io/art/bkjisrs3p9fefqnr0rng)
 * [2019/07/04 bouncing balls](https://neort.io/art/bkfjdds3p9f188g4sssg)
 * [2019/07/01 recursive tetrahedron](http://glslsandbox.com/e#55834.0)
 * [2019/07/01 menger sponge2](http://glslsandbox.com/e#55835.0)
